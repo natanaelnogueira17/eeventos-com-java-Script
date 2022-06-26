@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eventos</title>
+<script>
+  function acao (){
+    alert('evento disparado')
+  }
+</script>
+
+</head>
+<body>
+  <div class="verde" onclick="acao()"  style="background: green; color:aliceblue; height:150px; width: 150px;">
+  <h1>clique apenas uma vez</h1></div>
+  
+  <hr>
+  <hr>
+  <div class="vermelho" ondblclick="acao()" style="background: rgb(128, 0, 0); color:aliceblue;height:150px; width: 150px;">
+    <h1>clique duas vezes</h1></div>
+
+    <hr>
+  <hr>
+  <div class="purple" onmouseover ="acao()" style="background: rgb(86, 4, 61); color:aliceblue;height:150px; width: 150px;">
+    <h1>passe apenas o mouse em cima</h1></div>
+
+  <hr>
+  <hr>
+  <div class="orange" onmouseout="acao()" style="background:orangered; color:aliceblue; height:150px; width: 150px;">
+    <h1>insire e retire o mouse</h1></div>
+
+  <hr>
+  <hr>
+  <script>
+    function acao1 (){
+      alert('vc clicou apenas uma vez')
+    }
+
+    function acao2 (){
+      alert('vc clicou duas vezes')
+    }
+
+    function acao3 (){
+      alert('vc inseriu o mouse')
+    }
+    function acao4 (){
+      alert('vc retirou o mouse')
+    }
+  </script>
+   
+  <div class="orange" onclick="acao1()"  ondblclick="acao2()" onmouseover ="acao3()" onmouseout="acao4()" style="background:black; color:aliceblue; height:150px; width: 150px;">
+    
+  
+
+  
+  </div>
+
+
+
+ 
+</body>
+</html>
